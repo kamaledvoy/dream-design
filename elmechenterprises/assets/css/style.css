@@ -8,9 +8,10 @@
     --bg-dark: #7aa93c;
     --green: #43b900;
     --light-green: #b3d866;
-    --gray: #aab8c2;
+    --gray: #dee2e64f;
     --light-bg: #e7e8e9;
     --orange: #ffc107;
+    --red-dark: #d32234;
 
     --pad_5: 5rem;
     --pad_4: 4rem;
@@ -33,6 +34,7 @@
     --fs15: 1.5rem;
     --fs125: 1.25rem;
     --fs1: 1rem;
+    --f-sm: 0.85rem;
 
     --fw900: 900;
     --fw700: 700;
@@ -71,6 +73,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.text-sm {
+    font-size: var(--f-sm);
 }
 
 /* Loader */
@@ -187,7 +193,6 @@ main {
 section {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: var(--green);
     z-index: 0;
 }
 
@@ -408,7 +413,7 @@ header.sticky {
 }
 
 .bg-lightgray {
-    background: var(--green);
+    background: var(--gray);
 }
 
 .bg-lightgreen {
@@ -570,7 +575,7 @@ header.sticky {
 }
 
 .btn-theme {
-    background: var(--orange);
+    background: var(--red-dark);
     box-shadow: 7px 7px 0 #bced91;
     color: #fff !important;
     border: unset;
@@ -586,13 +591,13 @@ header.sticky {
     color: #000 !important;
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #43b900 !important;
+    border: 1px solid #912200 !important;
     text-align: center !important;
     background-image: -webkit-linear-gradient(45deg,
-            #ffc107 50%,
+            #ec0d0d 50%,
             transparent 50%) !important;
     background-image: linear-gradient(45deg,
-            #ffc107 50%,
+            #ff0707 50%,
             transparent 50%) !important;
     background-size: 500px !important;
     background-repeat: no-repeat !important;
@@ -876,7 +881,7 @@ button:focus {
     font-size: var(--fs15);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -889,7 +894,7 @@ button:focus {
     right: 0;
     width: 100px;
     height: 3px;
-    background: var(--green);
+    background-color: var(--green);
     margin: 0 auto;
 }
 
@@ -956,7 +961,7 @@ button:focus {
     z-index: 1000;
     position: relative;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     padding: 12px 0;
     color: var(--white);
 }
@@ -978,7 +983,7 @@ button:focus {
 .enquiry-sec h2 {
     font-size: var(--fs15);
     font-weight: var(--fw700);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 1rem;
 }
 
