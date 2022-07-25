@@ -422,7 +422,6 @@ header.sticky {
 
 .bg-welcome {
     position: relative;
-    background: #71ca00;
     z-index: 0;
 }
 
@@ -455,7 +454,7 @@ header.sticky {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: linear-gradient(120deg, #43b901, #71ca00);
+    background-color: var(--black-light);
     z-index: -1;
 }
 
@@ -489,8 +488,8 @@ header.sticky {
     -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 20%),
         0 1px 3px 1px rgb(60 64 67 / 10%);
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 20%), 0 1px 3px 1px rgb(60 64 67 / 10%);
+    background-color: var(--gray);
     z-index: -2;
-    background: green;
 }
 
 .welcome-info .content h2 {
@@ -498,7 +497,7 @@ header.sticky {
     font-size: var(--fs2);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--white);
+    color: var(--black-light);
     text-align: left;
     margin-bottom: 10px;
 }
@@ -508,7 +507,7 @@ header.sticky {
     font-size: var(--fs1);
     font-weight: var(--fw400);
     line-height: var(--fs15);
-    color: var(--white);
+    color: var(--black-light);
     text-align: justify;
     margin-bottom: 20px;
 }
