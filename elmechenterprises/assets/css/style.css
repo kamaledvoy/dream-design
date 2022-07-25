@@ -812,7 +812,7 @@ button:focus {
     font-size: var(--fs15);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -834,7 +834,7 @@ button:focus {
     font-size: var(--fs125);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--light);
+    color: var(--red-dark);
     margin-bottom: var(--fs1);
 }
 
