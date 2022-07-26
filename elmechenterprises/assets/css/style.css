@@ -386,9 +386,9 @@ header.sticky {
 .bg-light {
     position: relative;
     background: linear-gradient(90deg,
-            rgba(67, 185, 0, 0.8),
-            rgba(67, 185, 0, 0.8)),
-        url(../images/header-bg.jpg) no-repeat;
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url(../images/elmech-solar-plant-3.jpg) no-repeat;
     background-position: bottom center;
     background-attachment: fixed;
     background-size: cover;
@@ -517,18 +517,18 @@ header.sticky {
 /* Home about */
 .home-about {
     position: relative;
-    background: green;
     z-index: 0;
 }
 
 .home-about h2 {
     position: relative;
-    font-size: var(--fs2);
+    font-size: var(--fs15);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--white);
+    color: var(--black-light);
     letter-spacing: 0.5px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .home-about ul {
@@ -543,16 +543,13 @@ header.sticky {
     justify-content: start;
     align-items: center;
     margin-bottom: 15px;
-    color: var(--white);
+    color: var(--black-light);
 }
 
 .home-about li span {
     position: relative;
     display: inline-table;
     text-align: center;
-    color: var(--white);
-    font-size: var(--fs1);
-    font-weight: var(--fw600);
     line-height: 20px;
     margin-right: 20px;
     width: 15px;
@@ -567,8 +564,8 @@ header.sticky {
     width: 15px;
     height: 15px;
     border-radius: 2px;
-    background: #ffe500;
-    box-shadow: -5px 5px 0px #056d00;
+    background: var(--red-dark);
+    box-shadow: -5px 5px 0px var(--light-green);
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -745,15 +742,15 @@ button:focus {
 }
 
 .minirals .minirals-division {
+    content: '';
     position: absolute;
     top: 0;
-    right: 0;
-    left: 50%;
+
     bottom: 0;
     z-index: 1;
     max-width: 50%;
     height: 100%;
-    background: transparent;
+    background: var(--gray);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -770,12 +767,22 @@ button:focus {
     padding: var(--pad_5);
 }
 
+.minirals:nth-child(odd) .minirals-division {
+    right: 0;
+    left: 50%;
+}
+
+.minirals:nth-child(even) .minirals-division {
+    left: 0;
+    right: 50%;
+}
+
 .minirals .minirals-division h2 {
     font-size: calc(var(--fs1) + 3vmin);
     font-weight: var(--fw600);
     line-height: calc(var(--fs15) + 3vmin);
     letter-spacing: 0.5px;
-    color: var(--green);
+    color: var(--black-light);
     margin-bottom: var(--pad_2);
 }
 
@@ -784,7 +791,8 @@ button:focus {
     font-weight: var(--fw400);
     line-height: var(--fs15);
     letter-spacing: normal;
-    color: var(--gray);
+    color: var(--black-light);
+    text-align: justify;
 }
 
 .minirals .minirals-division ul {
@@ -798,7 +806,7 @@ button:focus {
     font-size: var(--fs1);
     font-weight: var(--fw400);
     line-height: var(--fs15);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 10px;
 }
 
@@ -1025,7 +1033,7 @@ button:focus {
 .page-header {
     position: relative;
     background: linear-gradient(90deg, rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.5)),
-        url(../images/agri.jpeg);
+        url(../images/elmech-solar-plant.jpg);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -1066,14 +1074,13 @@ button:focus {
 /* about page */
 .about-sec {
     position: relative;
-    background: var(--green);
 }
 
 .about-sec h2 {
     font-size: var(--fs2);
     font-weight: var(--fw700);
     line-height: var(--fs25);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 10px;
 }
 
@@ -1081,7 +1088,7 @@ button:focus {
     font-size: var(--fs15);
     font-weight: var(--fw700);
     line-height: var(--fs2);
-    color: var(--white);
+    color: var(--black-light);
     margin-bottom: 20px;
 }
 
@@ -1089,19 +1096,20 @@ button:focus {
     font-size: var(--fs1);
     font-weight: var(--fw400);
     line-height: var(--fs15);
-    color: var(--light);
+    color: var(--black-light);
     margin-bottom: 20px;
 }
 
 .user-pfofile {
     position: relative;
-    width: 350px;
+    width: 100%;
+    height: 100%;
 }
 
 .user-pfofile .profile {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1143,11 +1151,12 @@ button:focus {
 }
 
 .about-services h2 {
-    font-size: var(--fs2);
-    font-weight: var(--fw700);
+    font-size: var(--fs15);
+    font-weight: var(--fw600);
     line-height: var(--fs25);
     color: var(--white);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .about-services p {
@@ -1304,8 +1313,8 @@ button:focus {
     display: flex;
     font-size: var(--fs1);
     font-weight: var(--fw500);
-    line-height: normal;
-    margin-bottom: 10px;
+    line-height: var(--fs15);
+    margin-bottom: 1.25rem;
     color: var(--light);
 }
 
@@ -1463,7 +1472,7 @@ button:focus {
     position: relative;
     padding: 15px 0px;
     color: var(--white);
-    background: var(--black);
+    background: var(--bg-dark);
     margin: var(--pad_2);
     padding: 2rem 3rem;
     transition: background 1s;
@@ -1471,7 +1480,7 @@ button:focus {
 }
 
 .box-animate:hover {
-    background: var(--gray-dark);
+    background: var(--red-dark);
 }
 
 .box-animate:after {
@@ -1489,7 +1498,7 @@ button:focus {
 
 .box-animate:hover:after {
     transform: translate(-10px, -10px);
-    border: 2px solid var(--gray-dark);
+    border: 2px solid var(--red-dark);
 }
 
 .box-animate:before {
@@ -1507,7 +1516,7 @@ button:focus {
 
 .box-animate:hover:before {
     transform: translate(10px, 10px);
-    border: 2px solid var(--gray-dark);
+    border: 2px solid var(--red-dark);
 }
 
 .box-animate h3 {
