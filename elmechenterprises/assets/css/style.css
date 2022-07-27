@@ -882,6 +882,91 @@ button:focus {
 
 /* parallex */
 
+
+/* service section */
+.service-blog {
+    position: relative;
+    width: 100%;
+    padding-top: var(--pad_3);
+    padding-bottom: var(--pad_3);
+}
+
+.service-blog .card>p {
+    position: relative;
+    font-size: var(--fs14);
+    font-weight: var(--fw400);
+    line-height: var(--fs15);
+    color: var(--black);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.service-blog .card {
+    position: relative;
+    margin-bottom: var(--pad_2);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: var(--white);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border-radius: 4px;
+}
+
+.service-blog .card:hover {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-box-shadow: 0 0 20px 5px #f1f1f1;
+    box-shadow: 0 0 20px 5px #f1f1f1;
+}
+
+.service-blog .card .card-body {
+    padding: var(--pad_1);
+}
+
+.service-blog .card .card-body h2 {
+    font-size: var(--fs125);
+    font-weight: var(--fw700);
+    line-height: var(--fs15);
+    color: var(--black);
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.service-blog .card .card-body h2 a {
+    color: var(--black);
+    text-decoration: none;
+    text-transform: none;
+}
+
+.service-blog .card .card-body .btn-custom {
+    font-size: var(--fs1);
+    font-weight: var(--fw700);
+    line-height: var(--fs15);
+    letter-spacing: normal;
+    background: var(--white);
+    color: var(--red-dark);
+    border: 2px solid var(--red-dark);
+    text-transform: capitalize;
+    border-radius: 50px;
+    margin: 0 auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.service-blog .card:hover .btn-custom {
+    background: var(--red-dark);
+    color: var(--white);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+
 /* contact section */
 .contact-infosec h2 {
     position: relative;
