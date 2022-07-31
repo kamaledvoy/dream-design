@@ -1,0 +1,9 @@
+@font-face {
+  font-family: LeHavreLight;
+  src: url("./LeHavreLight.woff");
+  src: local("blendinteriors/assets/css"), url("./LeHavreLight.woff") format("woff");
+}
+
+h1 {
+  font-family: LeHavreLight !important;
+}

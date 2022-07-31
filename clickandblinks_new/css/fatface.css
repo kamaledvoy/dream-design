@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'AbrilText';
+	src: url('../fonts/AbrilText-Italic.eot');
+    src: url('../fonts/AbrilText-Italic_162a16fe.eot') format('embedded-opentype'),
+        url('../fonts/AbrilText-Italic.woff2') format('woff2'),
+        url('../fonts/AbrilText-Italic.woff') format('woff'),
+        url('../fonts/AbrilText-Italic.ttf') format('truetype'),
+        url('../fonts/AbrilText-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}

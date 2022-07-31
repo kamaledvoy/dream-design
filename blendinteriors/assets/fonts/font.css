@@ -1,0 +1,23 @@
+@font-face {
+  font-family: LeHavreLight;
+  src: url('LeHavreLight.woff');
+  src: local("blendinteriors/assets/fonts"), url("LeHavreLight.eot") format("eot"), url('LeHavreLight.otf') format('otf'),;
+}
+@font-face {
+  font-family: NovaRegular;
+  src: url('ProximaNovaRegular.woff');
+  src: local("blendinteriors/assets/fonts"), url("ProximaNovaRegular.eot") format("eot"), url('ProximaNovaRegular.otf') format('otf'),;
+}
+@font-face {
+  font-family: NovaBold;
+  src: url('ProximaNovaBold.woff');
+  src: local("blendinteriors/assets/fonts"), url("ProximaNovaBold.eot") format("eot"), url('ProximaNovaBold.otf') format('otf'),;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: LeHavreLight !important;
+}
+
+p, a {
+  font-family: NovaRegular !important;
+}
