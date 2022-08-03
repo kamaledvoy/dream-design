@@ -26,6 +26,12 @@ Baby Blue
 #7ec8e3
 */
 
+:root {
+	--black: #000;
+	--white: #ffffff;
+}
+
+
 html {
 	position: relative;
 	background: #fff;
@@ -45,7 +51,7 @@ body {
 	letter-spacing: normal;
 	word-spacing: 0px;
 	box-sizing: border-box;
-	background: #f9f9f9;
+	background: #f2f2f2;
 }
 
 h1,
@@ -701,6 +707,88 @@ ul {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
 	margin: 0 auto;
+}
+
+.home-parallex {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.home-parallex:before {
+	content: '';
+	position: absolute;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/gallery/photography-banner.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.home-parallex .content {
+	position: relative;
+	max-width: 750px;
+	padding: 175px 0px;
+}
+
+.home-parallex .content h2 {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--white);
+	margin-bottom: 1rem;
+}
+
+.home-parallex .content h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 2rem;
+	color: #fff;
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+}
+
+.home-parallex .content p {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0.5px;
+	color: var(--white);
+}
+
+.btn-view {
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	background: #0000ff;
+	color: var(--white);
+	padding: 12px 25px;
+	border: 2px solid #0000ff;
+	text-transform: uppercase;
+	border-radius: 50px;
+	min-width: 150px;
+	margin: 10px 10px;
+	outline: none;
+	transition: 0.3s;
+}
+
+.btn-custom {
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	background: #fff;
+	color: var(--black);
+	padding: 12px 25px;
+	border: 2px solid #000;
+	text-transform: uppercase;
+	border-radius: 50px;
+	min-width: 150px;
+	margin: 10px 10px;
+	outline: none;
+	transition: 0.3s;
 }
 
 .padding-sec {
