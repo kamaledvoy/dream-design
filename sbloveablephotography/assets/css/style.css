@@ -1929,6 +1929,10 @@ h2 {
 /* Media screen START */
 @media (max-width: 768px) {
 
+	.social-icon {
+		justify-content: center;
+	}
+
 	.cursor-border-top,
 	.cursor-border-bottom {
 		display: none;
@@ -2226,7 +2230,18 @@ h2 {
 	.profile_content {
 		width: 100%;
 		height: auto;
-		padding: 0;
+		padding: 0 1rem;
+	}
+
+	.btn-custom,
+	.btn-view,
+	.btn-primary {
+		padding: 0.75rem;
+	}
+
+	.profile_content:before {
+		left: 0;
+		right: 0;
 	}
 
 	.service_box {
@@ -2328,12 +2343,12 @@ h2 {
 		height: 50px;
 		margin: 0 auto;
 		text-align: center;
-		border: 1px dotted #ff0057;
+		border: 1px dotted #0000ff;
 		background: #fff;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #ff0057;
+		color: #0000ff;
 		border-radius: 50px;
 	}
 
