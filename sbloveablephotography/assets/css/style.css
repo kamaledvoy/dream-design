@@ -58,6 +58,11 @@ body {
 	background: #f2f2f2;
 }
 
+.btn-dark.focus,
+.btn-dark:focus {
+	box-shadow: 0 0 0 0.2rem rgb(52 58 64 / 0%) !important;
+}
+
 h1,
 .h1,
 h2,
@@ -2504,4 +2509,115 @@ h2 {
 	#main .container {
 		width: 1370px;
 	}
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	13. ISOTOPE PORTFOLIO GRID
+/*-----------------------------------------------------------------------------------*/
+figure {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin: 0 !important;
+	padding: 0;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.isotope-filter {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	z-index: 7999;
+}
+
+.isotope-filter ul {
+	margin-bottom: 20px;
+	list-style: none;
+	padding: 16px 0;
+}
+
+.isotope-filter ul li {
+	display: inline;
+
+}
+
+.isotope-filter ul li:before {
+	content: "·";
+	display: inline-block;
+	padding-right: 3px;
+	color: #3c3c3c;
+}
+
+.isotope-filter ul li:first-child:before {
+	display: none
+}
+
+.isotope-filter ul li a {
+	color: #000;
+	letter-spacing: 1.5px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 16px;
+	border: 1px solid #000;
+}
+
+.isotope-filter ul li a:hover,
+.isotope-filter ul li a.is-checked {
+	color: #ffffff !important;
+	background: #000000;
+}
+
+
+.portfolio-grid {
+	overflow: hidden;
+	width: 100%;
+}
+
+.portfolio-grid .items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.portfolio-grid .items::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.portfolio-grid .items li {
+	width: 33.33%;
+	float: left;
+	border-top: none;
+	border-left: none;
+	overflow: hidden;
+}
+
+
+
+.portfolio-grid .items li img {
+	width: 100%;
+	height: auto;
+}
+
+.portfolio-grid .items li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+
+
+.portfolio-grid .items li .gallery {
+	margin: 0 auto;
 }
